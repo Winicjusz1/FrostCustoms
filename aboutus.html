@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Frost Customs</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/327a0d490c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-icicles text-primary"></i> Fro<span
+                    class="text-primary">st</span> Customs</a>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars px-4"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="index.html">Home</a>
+                    <a class="nav-item nav-link active" href="#">O firmie <span class="sr-only">(current)</span></a>
+                    <!-- dla czytników ekranów. Aby w navigacji bylo podświetlenie strony gdzie jesteś to przerzucamy klasę activ z index do obecnej strony-->
+                    <a class="nav-item nav-link" href="services.html">Usługi</a>
+                    <a class="nav-item nav-link" href="projects.html">Projekty</a>
+                    <a class="nav-item nav-link" href="contact.html">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="top-hero aboutus-hero">
+            <!--to jest sekcja na zdjęcie  z cieniem i napisem na zdjęciu, zdjęcie podlinkujemy w css jako background -->
+            <div class="hero-shadow"></div>
+            <p class="top-hero-text text-light">o firmie</p>
+        </section>
+
+        <section class="aboutus-top p-5">
+            <!--padding aby tresc w mniejszych ekranach nie przylegała do krawedzi i aby sekcja trochę urosła, następnie w tym divie dajemy  div class="row" a w nim  dopiero div class="container" z paddingiem na Y  aby jeszcze urosło następnie w środek wklejamy  w paragraf p o class="display-3" ( 1 to  największy text  a 5 najmniejszy text)  ikonę  z nazwą firmy z loga  i w css zmieniamy ją na uppercase a poniżej wklejamy dwa paragrafy p z Lorem   -->
+            <div class="row">
+                <div class="container py-5">
+                    <p class="display-3">
+                        <i class="fas fa-icicles text-primary"></i> Fro<span class="text-primary">st</span> Customs
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ex quaerat, obcaecati
+                        necessitatibus aspernatur esse labore iste nostrum eos adipisci dolorem maiores explicabo, odio
+                        repellendus? Unde sint pariatur voluptas inventore.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus provident enim expedita,
+                        corrupti neque eius sunt rerum, nihil ipsam, fugiat distinctio quidem labore id! Numquam optio
+                        ducimus beatae praesentium quasi.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-top border-bottom aboutus-info aboutus-shadow">
+            <!-- w tej sekcji dajemu border od góry i od dołu bo chcemy mieć rozgraniczenie miedzy sekcjami jak na wzorze, aboutus-info to nasza klasa wewnętrzna -->
+            <div class="container">
+                <!-- w kontenerze są trzy pod sekcje  tj. lewy text zdjęcie na środku i prawy text, kolumny textu mają po trzy kolumny składowe od rozmiaru lg , w dużych rozmiarach będą te elementy obok siebie  a na małych wskoczą nad siebie na wzajem -->
+                <div class="row m-0 justify-content-center">
+                    <!-- pozbycie się auto margin i wycentrowanie  wewnątrz elementów -->
+
+                    <div class="col-lg-3 aboutus-text aboutus-text-left">
+                        <!-- to jest kolumna trzy kolumnowa od rozmiaru lg  a w rozmiarze mniejszym ma ona domyślnie 12 kolumn składowych  - dla lewego tekstu -->
+                        <h3>our passion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, similique dicta vitae velit
+                            minima delectus impedit aspernatur eaque natus quae adipisci corrupti quas rerum molestias
+                            perferendis maxime optio sapiente eligendi.</p>
+                    </div>
+
+                    <div class="d-lg-none col aboutus-img"></div>
+                    <!-- to jest div widoczny tylko na mniejszych urzadzeniach poniżej rozmiaru lg a w lg jest już niewidoczny i ten div na domyślniecol róny 12 a jest wpisany tylko wyraz col !!!!!!!!!!!!!-->
+                    <div class="d-none d-lg-block col-lg-4 aboutus-img"></div>
+                    <!-- ten div jest widoczny tylko na urzadzenieach wiekszych jak osiągnie rozmiar lg to będzie blokowy i przez to widoczny a tej powyzej zniknie - one się zamienią - i ten  ma ustawione  4 kolumny składowe. Zostawiammy jeszzce dwie kolumny w zapasie aby  mieć więcej miejsca na naszą tersć !!!!!!!!!!!! to div zdjęciowy ma 4 kol a tekstowe divy mają po 3 kolumny  i dlatego zostaje nam w zapasie jeszcze 2 kolumny !!!!!!!!!!. -->
+
+                    <div class="col-lg-3 aboutus-text aboutus-text-right">
+                        <!-- a to jest kolumna  trzy kolumnowa od rozmiaru lg  a w rozmiarze mniejszym ma ona domyślnie 12 kolumn składowych - dla prawego tekstu -->
+                        <h3>our goals</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, similique dicta vitae velit
+                            minima delectus impedit aspernatur eaque natus quae adipisci corrupti quas rerum molestias
+                            perferendis maxime optio sapiente eligendi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="aboutus-bottom py-5">
+            <!-- sekcja z padingiem góra dół -->
+            <div class="container py-5 text-light">
+                <!-- container z padingiem góra dół i jasnym textem -->
+                <div class="row row-cols-md-2 row-cols-lg-3">
+                    <!-- to ten row zarządza zbiorczo wszystkimi kadtami -->
+                    <!-- w conatainerze  row z NOWĄ klasą  row-cols i dla md mają być dwie kolumny, dla lg będa trzy kolumny kart  a dla sm mają podświadomie  po 12kolumn składowych tj. będzie jedna duza kolumna i będą się ukąłdać pod sobą !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!,  -->
+                    <!-- od tego miejsca -->
+                    <div class="col-md-6 col-lg-4">
+                        <!-- to jest opakowanie jednej karty z rozmiarami 12kol dla sm - to domyśne -,  6 col dla md i 4 col dla lg, -->
+
+                        <div class="card p-4 mb-3 bg-dark">
+                            <!-- od tego miejsca to jest skopiowana i przerobiona karta z Bootstrapa  o nazwie Horizontal!!!!!!!,  to jest div card !!!!! jedna własciwa karta  a poniżej jest jej wnętrze -->
+
+                            <div class="row no-gutters">
+                                <!-- w kolejnym opakowaniu typu no-gutters !!!!!! mamy przestrzeń na ikonę to ten div col-4 d-flex itd., i przestrzeń na text - to ten div col-8 a w nim div card-body z h3 i paragrafem p.  -->
+
+                                <div class="col-4 d-flex justify-content-center align-items-center">
+                                    <i class="far fa-building"></i>
+                                </div>
+
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Card title</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Quae,
+                                            cupiditate.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- do tego miejsca to jest jedna karta  a poniże jest kolejna zw zmienionym tłem i później  odbie dwa razy skopiowane o mamy 6 kart  z róznymi tłami i podmienionymi  ikonami -->
+
+
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card p-4 mb-3 bg-primary">
+                            <div class="row no-gutters">
+                                <div class="col-4 d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Card title</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Quae,
+                                            cupiditate.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card p-4 mb-3 bg-dark">
+                            <div class="row no-gutters">
+                                <div class="col-4 d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-tags"></i>
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Card title</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Quae,
+                                            cupiditate.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card p-4 mb-3 bg-primary">
+                            <div class="row no-gutters">
+                                <div class="col-4 d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-gem"></i>
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Card title</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Quae,
+                                            cupiditate.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card p-4 mb-3 bg-dark">
+                            <div class="row no-gutters">
+                                <div class="col-4 d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-credit-card"></i>
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Card title</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Quae,
+                                            cupiditate.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card p-4 mb-3 bg-primary">
+                            <div class="row no-gutters">
+                                <div class="col-4 d-flex justify-content-center align-items-center">
+                                    <i class="far fa-thumbs-up"></i>
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Card title</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Quae,
+                                            cupiditate.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+    <footer class="bg-dark text-light">
+        <!-- footer standard-->
+        <p class="py-5 px-3 mb-0 text-center">2021 &copy; Copyright <i class="ml-3 fas fa-icicles text-primary"></i>
+            Fro<span class="text-primary">st</span> Customs</p>
+
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
